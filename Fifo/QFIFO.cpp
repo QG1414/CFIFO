@@ -19,7 +19,7 @@ int FQEmpty( FQueue* q )
   return !q || !( q->pHead );
 }
 
-int FQEnqueue( FQueue* q, int x )
+int FQEnqueue( FQueue* q, QINFO* p )
 {
   if( !q )
     return 0;
@@ -29,7 +29,7 @@ int FQEnqueue( FQueue* q, int x )
   if( !newItem )
     return 0;
 
-  newItem->key = x;
+  newItem->pInfo = p;
   newItem->pNext = NULL;
 
   if( !( q->pHead ) )
@@ -42,18 +42,18 @@ int FQEnqueue( FQueue* q, int x )
   return 1;
 }
 
-int FQDequeue( FQueue* q )
+QINFO* FQDequeue( FQueue* q )
 {
   if( FQEmpty( q ) )
-    return INT_MIN;
+    return NULL;
 
-  int val = q->pHead->key;
+  QINFO* val = q->pHead->pInfo;
   FQDel( q );
 
   return val;
 }
 
-void FQClear( FQueue* q )
+void FQClear( FQueue* q, void( __cdecl *freeMem )( const void* ) )
 {
   if( !q )
   {
@@ -62,18 +62,18 @@ void FQClear( FQueue* q )
   }
 
   while( !FQEmpty( q ) )
-    FQDel( q );
+    freeMem( FQDequeue( q ) );
 }
 
-void FQRemove( FQueue** q )
+void FQRemove( FQueue** q, void( __cdecl *freeMem )( const void* ) )
 {
-  if( !q )
+  if( !q || !(*q) )
   {
     printf("Queue does not exist in FQRemove\n");
     return;
   }
 
-  FQClear( *q );
+  FQClear( *q, *freeMem );
   free( *q );
 
   *q = NULL;
@@ -84,11 +84,32 @@ void FQDel( FQueue* q )
   if( FQEmpty( q ) )
   {
     printf("Queue is empty or does not exist in FQDel\n");
-    //kolejka nie istnieje lub jest pusta
     return;
   }
 
   FQItem* ptr = q->pHead;
   q->pHead = ptr->pNext;
+
+  if( !(q->pHead) )
+    q->pTail = NULL;
+
   free( ptr );
+
+}
+
+void FQPrint( FQueue* q, void( __cdecl *printInfo )( const void* ) )
+{
+  if( !q )
+  {
+    printf("Queue is empty or does not exist in FQPrint\n");
+    return;
+  }
+
+  FQItem* head = q->pHead;
+
+  while( head )
+  {
+    printInfo( head->pInfo );
+    head = head->pNext;
+  }
 }
