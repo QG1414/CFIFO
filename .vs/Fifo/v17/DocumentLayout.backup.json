@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{31F923A6-89AF-442D-9F95-C33F68EED08B}|Fifo\\Fifo.vcxproj|solutionrelative:Fifo\\Fifo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{31F923A6-89AF-442D-9F95-C33F68EED08B}|Fifo\\Fifo.vcxproj|D:\\WDI-C\\Semestr2\\Projekty\\Fifo\\Fifo\\global.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{31F923A6-89AF-442D-9F95-C33F68EED08B}|Fifo\\Fifo.vcxproj|solutionrelative:Fifo\\global.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{31F923A6-89AF-442D-9F95-C33F68EED08B}|Fifo\\Fifo.vcxproj|D:\\WDI-C\\Semestr2\\Projekty\\Fifo\\Fifo\\QFIFO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{31F923A6-89AF-442D-9F95-C33F68EED08B}|Fifo\\Fifo.vcxproj|solutionrelative:Fifo\\QFIFO.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{31F923A6-89AF-442D-9F95-C33F68EED08B}|Fifo\\Fifo.vcxproj|D:\\WDI-C\\Semestr2\\Projekty\\Fifo\\Fifo\\QFIFO.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{31F923A6-89AF-442D-9F95-C33F68EED08B}|Fifo\\Fifo.vcxproj|solutionrelative:Fifo\\QFIFO.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31F923A6-89AF-442D-9F95-C33F68EED08B}|Fifo\\Fifo.vcxproj|D:\\WDI-C\\Semestr2\\Projekty\\Fifo\\Fifo\\global.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{31F923A6-89AF-442D-9F95-C33F68EED08B}|Fifo\\Fifo.vcxproj|solutionrelative:Fifo\\global.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,35 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "QFIFO.h",
-              "DocumentMoniker": "D:\\WDI-C\\Semestr2\\Projekty\\Fifo\\Fifo\\QFIFO.h",
-              "RelativeDocumentMoniker": "Fifo\\QFIFO.h",
-              "ToolTip": "D:\\WDI-C\\Semestr2\\Projekty\\Fifo\\Fifo\\QFIFO.h",
-              "RelativeToolTip": "Fifo\\QFIFO.h",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAwBgAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-31T16:25:36.937Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "QFIFO.cpp",
-              "DocumentMoniker": "D:\\WDI-C\\Semestr2\\Projekty\\Fifo\\Fifo\\QFIFO.cpp",
-              "RelativeDocumentMoniker": "Fifo\\QFIFO.cpp",
-              "ToolTip": "D:\\WDI-C\\Semestr2\\Projekty\\Fifo\\Fifo\\QFIFO.cpp",
-              "RelativeToolTip": "Fifo\\QFIFO.cpp",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAAAE0AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-31T16:25:48.471Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -63,9 +36,37 @@
               "RelativeDocumentMoniker": "Fifo\\Fifo.cpp",
               "ToolTip": "D:\\WDI-C\\Semestr2\\Projekty\\Fifo\\Fifo\\Fifo.cpp",
               "RelativeToolTip": "Fifo\\Fifo.cpp",
-              "ViewState": "AgIAAEwAAAAAAAAAAADwv1oAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAGwAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-31T16:50:15.535Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "QFIFO.h",
+              "DocumentMoniker": "D:\\WDI-C\\Semestr2\\Projekty\\Fifo\\Fifo\\QFIFO.h",
+              "RelativeDocumentMoniker": "Fifo\\QFIFO.h",
+              "ToolTip": "D:\\WDI-C\\Semestr2\\Projekty\\Fifo\\Fifo\\QFIFO.h",
+              "RelativeToolTip": "Fifo\\QFIFO.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-31T16:25:36.937Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QFIFO.cpp",
+              "DocumentMoniker": "D:\\WDI-C\\Semestr2\\Projekty\\Fifo\\Fifo\\QFIFO.cpp",
+              "RelativeDocumentMoniker": "Fifo\\QFIFO.cpp",
+              "ToolTip": "D:\\WDI-C\\Semestr2\\Projekty\\Fifo\\Fifo\\QFIFO.cpp",
+              "RelativeToolTip": "Fifo\\QFIFO.cpp",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAHgAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-31T16:25:48.471Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -251,15 +252,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "global.h",
               "DocumentMoniker": "D:\\WDI-C\\Semestr2\\Projekty\\Fifo\\Fifo\\global.h",
               "RelativeDocumentMoniker": "Fifo\\global.h",
               "ToolTip": "D:\\WDI-C\\Semestr2\\Projekty\\Fifo\\Fifo\\global.h",
               "RelativeToolTip": "Fifo\\global.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-31T16:26:59.916Z"
+              "WhenOpened": "2025-03-31T16:26:59.916Z",
+              "EditorCaption": ""
             }
           ]
         }

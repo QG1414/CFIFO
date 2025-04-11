@@ -1,26 +1,26 @@
 #ifndef QFIFO_H
 #define QFIFO_H
 
-#include "global.h" // dostarczany przez uzytkownika tej kolejki
+#include "global.h" // added by user it defines what info will be stored in array
 
-typedef struct tagFQItem
+typedef struct tagFQItem // one queue element
 { 
-  QINFO* pInfo;
-  tagFQItem* pNext;
-} FQItem;   //FIFO Queue Item
+  QINFO* pInfo;     // info got from global.h
+  tagFQItem* pNext; // pointer to the next element in array
+} FQItem;
 
-typedef struct
+typedef struct // Queue type
 {
-  FQItem* pHead;  // ptr to the first queue item
-  FQItem* pTail;  // ptr to the last queue item
-} FQueue;  /// typ kolejkowy
+  FQItem* pHead;  // pointer to the first queue item
+  FQItem* pTail;  // pointer to the last queue item
+} FQueue;
 
-FQueue* FQCreate();                    // queue initiating  (NULL - fail)
-int     FQEmpty( FQueue* q );          // if FIFO empty returned 1 else 0 te¿ zwraca 1 gdy q jest nullem
-int     FQEnqueue( FQueue* q, QINFO* p ); // insert new item at the end sprawdzanie czy kolejka jest pusta
-QINFO*  FQDequeue( FQueue* q );        // take out the first item
-void    FQClear( FQueue* q, void( __cdecl *freeMem )( const void* ) );          // clears the queue czyszczenie kolejki do puki jest nie pusta
-void    FQRemove( FQueue** q, void( __cdecl *freeMem )( const void* ) );         // clears the queue  (=QFClear()) and removes sprawdza czy istniej, nastepnie czysci i zwalnia pamiêæ
-void    FQDel( FQueue* q );            // removes only first item usuniecie elementu
-void    FQPrint( FQueue* q, void( __cdecl *printInfo )( const void* ) );
+FQueue* FQCreate();                                                     // creating queue pointer (initialization)
+int     FQEmpty( FQueue* q );                                           // checks if queue is empty or if it does not exist
+int     FQEnqueue( FQueue* q, QINFO* p );                               // insert new item into queue and return if its sucessful
+QINFO*  FQDequeue( FQueue* q );                                         // take first element from queue
+void    FQClear( FQueue* q, void(__cdecl *freeMem )( const void* ) );   // clears whole queue and frees memory
+void    FQRemove( FQueue** q, void(__cdecl *freeMem )( const void* ) ); // clears queue and then removes queue
+void    FQDel( FQueue* q );                                             // removes one queue element and frees memory for it
+void    FQPrint( FQueue* q, void(__cdecl *printInfo )( const void* ) ); // prints whole queue without changing head or tail
 #endif
